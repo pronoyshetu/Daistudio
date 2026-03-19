@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daistudio Image Generation Interface</title>
+</head>
+<body>
+    <h1>Daistudio Image Generation Interface</h1>
+    <form id="imageGenerationForm">
+        <label for="imagePrompt">Image Prompt:</label>
+        <input type="text" id="imagePrompt" name="imagePrompt" required>
+        <button type="submit">Generate Image</button>
+    </form>
+    <div id="generatedImage" style="margin-top: 20px;"></div>
+    <script>
+        document.getElementById('imageGenerationForm').onsubmit = function(event) {
+            event.preventDefault();
+            const prompt = document.getElementById('imagePrompt').value;
+            // Call the API to generate an image based on the prompt
+            // Display the generated image in the #generatedImage div
+        };
+    </script>
+</body>
+</html>
